@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 
 import axios from 'axios'
+import './Form.css'
+
+
 
 export default class Form extends Component{
   state={

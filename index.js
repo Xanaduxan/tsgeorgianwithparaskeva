@@ -29,7 +29,7 @@ app.post('/api/form', (req, res)=>{
     to: process.env.DATA_EMAIL,
     subject:`Message from ${data.fullname}`,
     html:`
-    <h3>Info</h3>
+    <h3>Новая заявка</h3>
     <ul>
       <li>fullname: ${data.fullname}</li>
       <li>phone: ${data.phone}</li>

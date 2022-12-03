@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import './Team.css'
 
 const Team = () => {
 
@@ -7,7 +8,8 @@ const Team = () => {
       <div className="container">
         <h2 className="section-title">Параскева</h2>
         <div className="promo-container">
-          <div><img className="promo-photo" src="/images/promo-photo.jpg" alt="Преподаватель Параскева" /></div>
+          <div>
+            <img className="promo-photo" src="/images/promo-photo.jpg" alt="Преподаватель Параскева" /></div>
           <div className="team-container">
             <p className="p-container">
               Меня зовут Параскева, я окончила Восточный факультет Санкт-Петербургского
