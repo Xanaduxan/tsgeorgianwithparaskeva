@@ -1,0 +1,19 @@
+.reviews-list{
+
+}
+
+.review-item{
+  --max-line: 4;
+  padding: 20px;
+}
+
+
+.description {
+  
+  width: 500px;
+  line-height: 1.2;
+  overflow: hidden;
+  line-height: var(--line-height);
+  height: calc(var(--max-line)*1em*var(--line-height));
+  position: relative;
+}

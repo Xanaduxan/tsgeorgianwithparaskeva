@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  color: rgb(4, 5, 5);
+  padding: 15px;
+  
+}
+
+h2 {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(135, 135, 222);
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.edu {
+  display: flex;
+  flex-direction: column;
+}
+
+div.promo-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.promo-photo {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.p-container {
+  padding: 20px;
+}
+
+
+
+
+

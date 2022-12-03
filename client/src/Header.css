@@ -1,0 +1,18 @@
+
+.App-header {
+  width: 100%;
+  background-image: url('../public/images/background_mountains.jpg');
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+}
