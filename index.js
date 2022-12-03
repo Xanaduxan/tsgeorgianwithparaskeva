@@ -1,13 +1,13 @@
+
 const express = require('express');
-const bodyParser = require('body-parser');
+
 const nodemailer= require('nodemailer');
-const cors = require('cors');
-
+const config = require('./serverConfig');
+require('dotenv').config();
 const app = express();
+config(app);
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(cors());
+
 
 app.get('/', ()=>{
   resizeBy.send('welcome')
@@ -19,14 +19,14 @@ app.post('/api/form', (req, res)=>{
     host: 'smtp.yandex.ru',
     port: 465,
     auth: {
-      user: 'wolf-rent@yandex.ru',
-      pass: 'Wolves12345678!',
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   })
 
   const mailOptions=({
-    from: 'wolf-rent@yandex.ru',
-    to: 'oevkarpova@gmail.com',
+    from: process.env.EMAIL_USER,
+    to: process.env.DATA_EMAIL,
     subject:`Message from ${data.fullname}`,
     html:`
     <h3>Info</h3>

@@ -10,15 +10,17 @@ h2 {
 .reviews-list{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap:50px;
   align-items: center;
   font-size: 24px;
   margin: 10px;
+
 }
 
 .review-item{
   border: 1px solid black;
-  width: 700px;
+  max-width: 700px;
     border-radius: 0.25em;
     padding: 1rem;
     background-color: white;
@@ -31,9 +33,11 @@ h2 {
 
 .review-author{
 padding:10px;
-font-style: italic;
+font-weight:bold;
 }
-.description:has(+ .expend-button:not(:checked)) {
+
+
+.description:has(~ .expend-button:not(:checked)) {
   --line-height: 1.2;
   overflow: hidden;
   line-height: var(--line-height);
@@ -43,7 +47,7 @@ font-style: italic;
 
 
 
-.description:has(+ .expend-button:not(:checked))::before {
+.description:has(~ .expend-button:not(:checked))::before {
   content:"";
   width: 100%;
   height: calc(var(--line-height) * 2em);
