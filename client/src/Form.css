@@ -2,7 +2,7 @@
   background-color: rgb(247, 253, 251);
   margin: 100px auto;
   padding: 10px;
-  width: 70%;
+  width: 40%;
   box-shadow: 1px 1px 4px 1px lightblue;
   border-radius: 5px;
   font-size: 20px;
@@ -11,6 +11,13 @@
 .container form {
   width: 100%;
   padding: 10px;
+
+}
+.promo-container{
+display: flex;
+justify-content: center;
+margin-left:20px;
+margin-right:20px;
 
 }
 
@@ -87,17 +94,9 @@
     flex-direction: column;
   }
 
-  .container {
-    width: 60%;
-  }
 
-  img.promo-photo {
-    width: inherit;
-    border-radius: 10px;
-    overflow: hidden;
-    
-  }
 
+ 
 }
 
 @media screen and (min-width>664px) and (min-width:986px) {

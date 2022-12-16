@@ -5,7 +5,7 @@ import './Team.css'
 const Team = () => {
 
   return (<>
-      <div className="container">
+      <div>
         <h2 className="section-title">Параскева</h2>
         <div className="promo-container">
           <div>
@@ -17,9 +17,9 @@ const Team = () => {
               персидский и армянский языки.
             </p>
 
-            <p className="p-conainer">Занимаюсь преподаванием грузинского с 2016 года.</p>
+            <p className="p-container">Занимаюсь преподаванием грузинского с 2016 года.</p>
 
-            <p className="p-conainer">
+            <p className="p-container">
               В свободное время я люблю гулять по городу,
               смотреть исторические передачи и придумывать новые задания для
               учеников.
@@ -27,16 +27,16 @@ const Team = () => {
 
             <ul className="edu">
               Образование:
-              <li>2021 аспирантура института Философии СПБГУ</li>
-              <li>2018 магистратура Восточного факультета СПБГУ</li>
-              <li>2016 бакалавриат Восточного факультета СПБГУ</li>
+              <li className='edu-point'>2021 аспирантура института Философии СПБГУ</li>
+              <li className='edu-point'>2018 магистратура Восточного факультета СПБГУ</li>
+              <li className='edu-point'>2016 бакалавриат Восточного факультета СПБГУ</li>
             </ul>
           </div>
 
         </div>
 
       </div>
- <Footer/>
+
       </>
   
    

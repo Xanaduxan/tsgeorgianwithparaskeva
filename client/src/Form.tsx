@@ -40,7 +40,7 @@ export default class Form extends Component{
 
     let data = {
         fullname:this.state.fullname,
-        phone:this.state.phone,
+
         email:this.state.email,
     }
 

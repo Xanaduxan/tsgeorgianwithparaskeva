@@ -4,34 +4,35 @@ import './Header.css'
 
 const Header = () => {
 
-  return (<div className="App">
+  return (
       <header className="App-header">
-        <h1>Грузинский с Параскевой</h1>
-          <ul className="nav-bar">
+        <h1 className='main-title'>Грузинский с Параскевой</h1>
+          <div><ul className="nav-bar">
        
-           <li>
+           <li className='nav'>
               <NavLink className="header__item" to="/">
                 Главная
               </NavLink>
            </li>
-            <li>
+            <li className='nav'>
               <NavLink className="header__item" to="/lessons">
               Занятия
               </NavLink>
             </li>
-            <li>
+            <li className='nav'>
               <NavLink className="header__item" to="/team">
               Команда
               </NavLink>
             </li>
-            <li>
+            <li className='nav'>
               <NavLink className="header__item" to="/reviews">
               Отзывы
               </NavLink>
             </li>
              </ul>
+             </div>
       </header>
-      </div>
+   
 )
     }
 export default Header;
